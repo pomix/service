@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49157/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceOMG" />
+  <xs:element name="GetOdataCollectionByAuthByHttpExample">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="posision" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOdataCollectionByAuthByHttpExampleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceOMG" minOccurs="0" name="GetOdataCollectionByAuthByHttpExampleResult" nillable="true" type="q1:ArrayOfd" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateBpmEntityByOdataHttpExample">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MobilePhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Dear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateBpmEntityByOdataHttpExampleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExistingBpmEnyityByOdataHttpExample">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MobilePhone" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Dear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateExistingBpmEnyityByOdataHttpExampleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBpmEntityByOdataHttpExample">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteBpmEntityByOdataHttpExampleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteBpmEntityByOdataHttpExampleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
